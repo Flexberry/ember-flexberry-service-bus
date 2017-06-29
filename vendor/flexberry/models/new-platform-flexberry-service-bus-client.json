@@ -1,0 +1,250 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusClient",
+  "modelName": "new-platform-flexberry-service-bus-client",
+  "className": "Client",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "dnsIdentity",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "text",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "sendingPermissions",
+      "relatedTo": "new-platform-flexberry-service-bus-sending-permission",
+      "inverse": "client"
+    },
+    {
+      "name": "subscriptions",
+      "relatedTo": "new-platform-flexberry-service-bus-subscription",
+      "inverse": "client"
+    }
+  ],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dnsIdentity",
+          "caption": "Dns identity",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "AuditView",
+          "caption": "Sending permissions",
+          "name": "sendingPermissions",
+          "relatedTo": "new-platform-flexberry-service-bus-sending-permission",
+          "inverse": null
+        },
+        {
+          "projectionName": "AuditView",
+          "caption": "Subscriptions",
+          "name": "subscriptions",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dnsIdentity",
+          "caption": "DNS Identity",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "DetailView",
+          "caption": "Subscriptions",
+          "name": "subscriptions",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription",
+          "inverse": null
+        },
+        {
+          "projectionName": "DetailView",
+          "caption": "Sending permissions",
+          "name": "sendingPermissions",
+          "relatedTo": "new-platform-flexberry-service-bus-sending-permission",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "LookupView",
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

@@ -1,0 +1,87 @@
+﻿{
+  "applicationCaption": null,
+  "applicationTitle": null,
+  "items": [
+    {
+      "link": null,
+      "menuName": "routing",
+      "caption": "Routing",
+      "title": "Routing",
+      "children": [
+        {
+          "link": "new-platform-flexberry-service-bus-client-list-form",
+          "menuName": null,
+          "caption": "Clients",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-service-bus-message-type-list-form",
+          "menuName": null,
+          "caption": "Message types",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-service-bus-subscription-list-form",
+          "menuName": null,
+          "caption": "Subscriptions",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "state",
+      "caption": "State",
+      "title": "State",
+      "children": [
+        {
+          "link": "new-platform-flexberry-service-bus-message-list-form",
+          "menuName": null,
+          "caption": "Messages",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "statistics",
+      "caption": "Statistics",
+      "title": "Statistics",
+      "children": [
+        {
+          "link": "new-platform-flexberry-service-bus-statistics-monitor-list-form",
+          "menuName": null,
+          "caption": "Settings statistics monitors",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-service-bus-statistics-record-list-form",
+          "menuName": null,
+          "caption": "Statistics records",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-service-bus-statistics-setting-list-form",
+          "menuName": null,
+          "caption": "Statistics settings",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-service-bus-statistics-compression-setting-list-form",
+          "menuName": null,
+          "caption": "Statistics compression settings",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

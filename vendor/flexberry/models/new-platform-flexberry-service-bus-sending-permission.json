@@ -1,0 +1,131 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusSendingPermission",
+  "modelName": "new-platform-flexberry-service-bus-sending-permission",
+  "className": "SendingPermission",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "messageType",
+      "relatedTo": "new-platform-flexberry-service-bus-message-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": true,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "new-platform-flexberry-service-bus-client",
+      "inverse": "sendingPermissions"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-sending-permission",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "DetailView",
+      "modelName": "new-platform-flexberry-service-bus-sending-permission",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 0,
+          "caption": "",
+          "name": "client",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

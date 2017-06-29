@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "NewPlatform.Flexberry.ServiceBus",
+  "className": "TransportType",
+  "enumObjects": {
+    "WCF": "WCF",
+    "WEB": "WEB",
+    "MAIL": "MAIL",
+    "HTTP": "HTTP"
+  }
+}

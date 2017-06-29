@@ -1,0 +1,432 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusSubscription",
+  "modelName": "new-platform-flexberry-service-bus-subscription",
+  "className": "Subscription",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "text",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "expiryDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "Now",
+      "stored": true
+    },
+    {
+      "name": "isCallback",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "transportType",
+      "type": "new-platform-flexberry-service-bus-transport-type",
+      "flexberryType": "TransportType",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "messageType",
+      "relatedTo": "new-platform-flexberry-service-bus-message-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": true,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "new-platform-flexberry-service-bus-client",
+      "inverse": "subscriptions"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "attrs": [
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "expiryDate",
+          "caption": "Expiry date",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "isCallback",
+          "caption": "Is callback",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "transportType",
+          "caption": "Transport type",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "DetailView",
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "attrs": [
+        {
+          "name": "isCallback",
+          "caption": "Callback",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "expiryDate",
+          "caption": "Expiry date",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "transportType",
+          "caption": "Transport type",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 1,
+          "caption": "",
+          "name": "client",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "attrs": [
+        {
+          "name": "expiryDate",
+          "caption": "Expiry date",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "isCallback",
+          "caption": "Callback",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "transportType",
+          "caption": "Transport type",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Client",
+          "name": "client",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "attrs": [
+        {
+          "name": "isCallback",
+          "caption": "Callback",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "expiryDate",
+          "caption": "Expiry date",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "transportType",
+          "caption": "Transport type",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Client",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "",
+          "name": "client",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Message type",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "caption": "",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "LookupView",
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "attrs": [
+        {
+          "name": "isCallback",
+          "caption": "Callback",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "expiryDate",
+          "caption": "Expiry date",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "transportType",
+          "caption": "Transport type",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "",
+              "hidden": true,
+              "index": 5
+            },
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 4,
+          "caption": "",
+          "name": "client",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "",
+              "hidden": true,
+              "index": 8
+            },
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 7,
+          "caption": "",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

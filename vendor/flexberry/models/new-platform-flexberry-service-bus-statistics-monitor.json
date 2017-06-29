@@ -1,0 +1,165 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusStatisticsMonitor",
+  "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+  "className": "StatisticsMonitor",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "owner",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "public",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "subscriptionStatisticsMonitor",
+      "relatedTo": "new-platform-flexberry-service-bus-subscription-statistics-monitor",
+      "inverse": "statisticsMonitor"
+    }
+  ],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+      "attrs": [
+        {
+          "name": "owner",
+          "caption": "Owner",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "public",
+          "caption": "Public",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "AuditView",
+          "caption": "Subscription statistics monitor",
+          "name": "subscriptionStatisticsMonitor",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription-statistics-monitor",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+      "attrs": [
+        {
+          "name": "owner",
+          "caption": "",
+          "hidden": true,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "public",
+          "caption": "Public",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "DetailView",
+          "caption": "Subscriptions statistics monitor",
+          "name": "subscriptionStatisticsMonitor",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription-statistics-monitor",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "public",
+          "caption": "Public",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

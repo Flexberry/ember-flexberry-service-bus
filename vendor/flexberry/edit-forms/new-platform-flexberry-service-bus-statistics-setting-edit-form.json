@@ -1,0 +1,54 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Subscription",
+      "projection": "LookupView",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Subscription.Client",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Subscription.MessageType",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsCompressionSetting.StatisticsSetting",
+      "projection": "ListView",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsRecord.StatisticsSetting",
+      "projection": "ListView",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Statistics setting",
+  "name": "NewPlatformFlexberryServiceBusStatisticsSettingEditForm",
+  "className": "StatisticsSettingEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+      "modelProjection": "EditView"
+    }
+  ]
+}

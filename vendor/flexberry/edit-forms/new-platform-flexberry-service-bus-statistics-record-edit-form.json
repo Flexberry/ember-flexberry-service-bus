@@ -1,0 +1,46 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsSetting",
+      "projection": "ListView",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsSetting.Subscription",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsSetting.Subscription.Client",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "StatisticsSetting.Subscription.MessageType",
+      "projection": "",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Statistics record",
+  "name": "NewPlatformFlexberryServiceBusStatisticsRecordEditForm",
+  "className": "StatisticsRecordEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-record",
+      "modelProjection": "EditView"
+    }
+  ]
+}

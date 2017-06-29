@@ -1,0 +1,393 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusMessage",
+  "modelName": "new-platform-flexberry-service-bus-message",
+  "className": "Message",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "sendingTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "Now",
+      "stored": true
+    },
+    {
+      "name": "receivingTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "Now",
+      "stored": true
+    },
+    {
+      "name": "isSending",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "errorCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "sender",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "body",
+      "type": "string",
+      "flexberryType": "text",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "attachment",
+      "type": "string",
+      "flexberryType": "text",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "binaryAttachment",
+      "type": "string",
+      "flexberryType": "Binary",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    },
+    {
+      "name": "priority",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "group",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "flexberryType": "stringMax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "logs",
+      "type": "string",
+      "flexberryType": "stringMax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "messageType",
+      "relatedTo": "new-platform-flexberry-service-bus-message-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": true,
+      "presence": true,
+      "name": "recipient",
+      "relatedTo": "new-platform-flexberry-service-bus-client",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-message",
+      "attrs": [
+        {
+          "name": "sender",
+          "caption": "Sender",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "sendingTime",
+          "caption": "Sending time",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "receivingTime",
+          "caption": "Receiving time",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "isSending",
+          "caption": "Is sending",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "group",
+          "caption": "Group",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "priority",
+          "caption": "Priority",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "errorCount",
+          "caption": "Error count",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "body",
+          "caption": "Body",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "attachment",
+          "caption": "Attachment",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "tags",
+          "caption": "Tags",
+          "hidden": false,
+          "index": 13
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Recipient",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "Recipient",
+          "name": "recipient",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "caption": "Message type",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-message",
+      "attrs": [
+        {
+          "name": "sender",
+          "caption": "Sender",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "sendingTime",
+          "caption": "Sending time",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "receivingTime",
+          "caption": "Receiving time",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "isSending",
+          "caption": "Is sending",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "priority",
+          "caption": "Priority",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "errorCount",
+          "caption": "Error count",
+          "hidden": false,
+          "index": 9
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Recipient",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Recipient",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "",
+          "name": "recipient",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Message type",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "caption": "",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "LookupView",
+      "modelName": "new-platform-flexberry-service-bus-message",
+      "attrs": [
+        {
+          "name": "sender",
+          "caption": "Sender",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "sendingTime",
+          "caption": "Sending time",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "receivingTime",
+          "caption": "Receiving time",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "errorCount",
+          "caption": "Error count",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Recipient",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Recipient",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "caption": "",
+          "name": "recipient",
+          "relatedTo": "new-platform-flexberry-service-bus-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "MessageType",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Message type",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "caption": "",
+          "name": "messageType",
+          "relatedTo": "new-platform-flexberry-service-bus-message-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

@@ -1,0 +1,475 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusStatisticsRecord",
+  "modelName": "new-platform-flexberry-service-bus-statistics-record",
+  "className": "StatisticsRecord",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "since",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "to",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "statisticsInterval",
+      "type": "new-platform-flexberry-service-bus-statistics-interval",
+      "flexberryType": "StatisticsInterval",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "sentCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "receivedCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "errorsCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "uniqueErrorsCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "connectionCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "queueLength",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "sentAvgTime",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "queryAvgTime",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "statisticsSetting",
+      "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+      "inverse": "statisticsRecord"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "DetailView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-record",
+      "attrs": [
+        {
+          "name": "since",
+          "caption": "Start interval",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "to",
+          "caption": "End interval",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "statisticsInterval",
+          "caption": "Interval",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "sentCount",
+          "caption": "Messages sent",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "receivedCount",
+          "caption": "Messages received",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "errorsCount",
+          "caption": "Errors (including repeated)",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "uniqueErrorsCount",
+          "caption": "Unique errors (without repeated)",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "StatisticsSetting",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 7,
+          "caption": "",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-record",
+      "attrs": [
+        {
+          "name": "since",
+          "caption": "Start interval",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "to",
+          "caption": "End interval",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "statisticsInterval",
+          "caption": "Interval",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "sentCount",
+          "caption": "Messages sent",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "receivedCount",
+          "caption": "Messages received",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "errorsCount",
+          "caption": "Errors (including repeated)",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "uniqueErrorsCount",
+          "caption": "Unique errors (without repeated)",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "connectionCount",
+          "caption": "Outgoing connections",
+          "hidden": false,
+          "index": 16
+        },
+        {
+          "name": "queueLength",
+          "caption": "Queue at end of interval",
+          "hidden": false,
+          "index": 17
+        },
+        {
+          "name": "sentAvgTime",
+          "caption": "Sent average time",
+          "hidden": false,
+          "index": 18
+        },
+        {
+          "name": "queryAvgTime",
+          "caption": "Query average time",
+          "hidden": false,
+          "index": 19
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Subscription.Description",
+          "lookupValueField": "subscription.Description",
+          "relationName": "StatisticsSetting",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "StatisticsSetting.Subscription",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.Client",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 4
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 5
+                    }
+                  ],
+                  "index": 3,
+                  "caption": "",
+                  "name": "client",
+                  "relatedTo": "new-platform-flexberry-service-bus-client",
+                  "inverse": null
+                },
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.MessageType",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 7
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 8
+                    }
+                  ],
+                  "index": 6,
+                  "caption": "",
+                  "name": "messageType",
+                  "relatedTo": "new-platform-flexberry-service-bus-message-type",
+                  "inverse": null
+                }
+              ],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "description",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 2
+                }
+              ],
+              "index": 1,
+              "caption": "",
+              "name": "subscription",
+              "relatedTo": "new-platform-flexberry-service-bus-subscription",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "caption": "Statistics setting",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-record",
+      "attrs": [
+        {
+          "name": "since",
+          "caption": "Start interval",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "to",
+          "caption": "End interval",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "statisticsInterval",
+          "caption": "Interval",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "sentCount",
+          "caption": "Messages sent",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "receivedCount",
+          "caption": "Messages received",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "errorsCount",
+          "caption": "Errors (including repeated)",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "uniqueErrorsCount",
+          "caption": "Unique errors (without repeated)",
+          "hidden": false,
+          "index": 15
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "StatisticsSetting",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "StatisticsSetting.Subscription",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.Client",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 4
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 5
+                    }
+                  ],
+                  "index": 3,
+                  "caption": "",
+                  "name": "client",
+                  "relatedTo": "new-platform-flexberry-service-bus-client",
+                  "inverse": null
+                },
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.MessageType",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 7
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 8
+                    }
+                  ],
+                  "index": 6,
+                  "caption": "",
+                  "name": "messageType",
+                  "relatedTo": "new-platform-flexberry-service-bus-message-type",
+                  "inverse": null
+                }
+              ],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "description",
+                  "caption": "Statistics setting",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": 1,
+              "caption": "",
+              "name": "subscription",
+              "relatedTo": "new-platform-flexberry-service-bus-subscription",
+              "inverse": null
+            }
+          ],
+          "hidden": true,
+          "attrs": [],
+          "index": 0,
+          "caption": "",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

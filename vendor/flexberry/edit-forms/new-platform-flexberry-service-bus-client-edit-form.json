@@ -1,0 +1,46 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Subscriptions.Client",
+      "projection": "LookupView",
+      "detailModelName": null
+    },
+    {
+      "master": "messageType",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "Subscriptions.MessageType",
+      "projection": "ListView",
+      "detailModelName": "new-platform-flexberry-service-bus-subscription"
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "SendingPermissions.Client",
+      "projection": "LookupView",
+      "detailModelName": null
+    },
+    {
+      "master": "messageType",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "SendingPermissions.MessageType",
+      "projection": "ListView",
+      "detailModelName": "new-platform-flexberry-service-bus-sending-permission"
+    }
+  ],
+  "caption": "Client",
+  "name": "NewPlatformFlexberryServiceBusClientEditForm",
+  "className": "ClientEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "modelProjection": "EditView"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Client",
+      "projection": "LookupView",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "MessageType",
+      "projection": "ListView",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Subscription",
+  "name": "NewPlatformFlexberryServiceBusSubscriptionEditForm",
+  "className": "SubscriptionEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "modelProjection": "EditView"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-statistics-monitor-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-statistics-monitor-edit-form",
+  "caption": "Setting statistics monitors",
+  "name": "NewPlatformFlexberryServiceBusStatisticsMonitorListForm",
+  "className": "StatisticsMonitorListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+      "modelProjection": "ListView"
+    }
+  ]
+}

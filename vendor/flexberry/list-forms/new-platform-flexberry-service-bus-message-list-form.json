@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-message-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-message-edit-form",
+  "caption": "Messages",
+  "name": "NewPlatformFlexberryServiceBusMessageListForm",
+  "className": "MessageListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-message",
+      "modelProjection": "ListView"
+    }
+  ]
+}

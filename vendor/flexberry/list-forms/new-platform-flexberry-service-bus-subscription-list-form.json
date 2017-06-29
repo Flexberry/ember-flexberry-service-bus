@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-subscription-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-subscription-edit-form",
+  "caption": "Subscriptions",
+  "name": "NewPlatformFlexberryServiceBusSubscriptionListForm",
+  "className": "SubscriptionListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-subscription",
+      "modelProjection": "ListView"
+    }
+  ]
+}

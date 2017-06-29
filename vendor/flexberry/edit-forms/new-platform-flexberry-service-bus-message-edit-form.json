@@ -1,0 +1,30 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Recipient",
+      "projection": "LookupView",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "MessageType",
+      "projection": "ListView",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Message",
+  "name": "NewPlatformFlexberryServiceBusMessageEditForm",
+  "className": "MessageEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-message",
+      "modelProjection": "EditView"
+    }
+  ]
+}

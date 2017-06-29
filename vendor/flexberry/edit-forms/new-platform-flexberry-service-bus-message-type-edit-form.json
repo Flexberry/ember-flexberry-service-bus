@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Message type",
+  "name": "NewPlatformFlexberryServiceBusMessageTypeEditForm",
+  "className": "MessageTypeEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-message-type",
+      "modelProjection": "EditView"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-statistics-setting-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-statistics-setting-edit-form",
+  "caption": "Statistics settings",
+  "name": "NewPlatformFlexberryServiceBusStatisticsSettingListForm",
+  "className": "StatisticsSettingListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+      "modelProjection": "ListView"
+    }
+  ]
+}

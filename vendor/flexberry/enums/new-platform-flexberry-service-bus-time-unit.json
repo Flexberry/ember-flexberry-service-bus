@@ -1,0 +1,11 @@
+﻿{
+  "nameSpace": "NewPlatform.Flexberry.ServiceBus",
+  "className": "TimeUnit",
+  "enumObjects": {
+    "Minute": "Minute",
+    "Hour": "Hour",
+    "Day": "Day",
+    "Month": "Month",
+    "Year": "Year"
+  }
+}

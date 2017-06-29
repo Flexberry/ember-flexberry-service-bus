@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-statistics-compression-setting-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-statistics-compression-setting-edit-form",
+  "caption": "Statistics compression settings",
+  "name": "NewPlatformFlexberryServiceBusStatisticsCompressionSettingListForm",
+  "className": "StatisticsCompressionSettingListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "modelProjection": "ListView"
+    }
+  ]
+}

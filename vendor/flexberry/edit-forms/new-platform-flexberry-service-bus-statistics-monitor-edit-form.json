@@ -1,0 +1,46 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "subscription",
+      "displayAttributeName": "description",
+      "required": true,
+      "relationName": "SubscriptionStatisticsMonitor.Subscription",
+      "projection": "LookupView",
+      "detailModelName": "new-platform-flexberry-service-bus-subscription-statistics-monitor"
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "SubscriptionStatisticsMonitor.Subscription.Client",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "SubscriptionStatisticsMonitor.Subscription.MessageType",
+      "projection": "",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "SubscriptionStatisticsMonitor.StatisticsMonitor",
+      "projection": "ListView",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Statistics monitor setting",
+  "name": "NewPlatformFlexberryServiceBusStatisticsMonitorEditForm",
+  "className": "StatisticsMonitorEditForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
+      "modelProjection": "EditView"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusStatisticsSetting",
+  "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+  "className": "StatisticsSetting",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "subscription",
+      "relatedTo": "new-platform-flexberry-service-bus-subscription",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "statisticsCompressionSetting",
+      "relatedTo": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "inverse": "statisticsSetting"
+    },
+    {
+      "name": "statisticsRecord",
+      "relatedTo": "new-platform-flexberry-service-bus-statistics-record",
+      "inverse": "statisticsSetting"
+    }
+  ],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Subscription",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Subscription",
+          "name": "subscription",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "AuditView",
+          "caption": "Statistics compression setting",
+          "name": "statisticsCompressionSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-compression-setting",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Description",
+          "lookupValueField": "description",
+          "relationName": "Subscription",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Subscription.Client",
+              "belongsTo": [],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "iD",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 3
+                },
+                {
+                  "name": "name",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 4
+                }
+              ],
+              "index": 2,
+              "caption": "",
+              "name": "client",
+              "relatedTo": "new-platform-flexberry-service-bus-client",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Subscription.MessageType",
+              "belongsTo": [],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "iD",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 6
+                },
+                {
+                  "name": "name",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 7
+                }
+              ],
+              "index": 5,
+              "caption": "",
+              "name": "messageType",
+              "relatedTo": "new-platform-flexberry-service-bus-message-type",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "Subscription",
+          "name": "subscription",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "DetailView",
+          "caption": "Statistics compression settings",
+          "name": "statisticsCompressionSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-compression-setting",
+          "inverse": null
+        },
+        {
+          "projectionName": "DetailView",
+          "caption": "Statistics records",
+          "name": "statisticsRecord",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-record",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-setting",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Subscription",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Subscription.Client",
+              "belongsTo": [],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "iD",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 3
+                },
+                {
+                  "name": "name",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 4
+                }
+              ],
+              "index": 2,
+              "caption": "",
+              "name": "client",
+              "relatedTo": "new-platform-flexberry-service-bus-client",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Subscription.MessageType",
+              "belongsTo": [],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "iD",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 6
+                },
+                {
+                  "name": "name",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 7
+                }
+              ],
+              "index": 5,
+              "caption": "",
+              "name": "messageType",
+              "relatedTo": "new-platform-flexberry-service-bus-message-type",
+              "inverse": null
+            }
+          ],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Subscription",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "caption": "",
+          "name": "subscription",
+          "relatedTo": "new-platform-flexberry-service-bus-subscription",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}

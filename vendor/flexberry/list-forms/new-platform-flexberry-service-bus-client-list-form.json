@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "new-platform-flexberry-service-bus-client-edit-form",
+  "editForm": "new-platform-flexberry-service-bus-client-edit-form",
+  "caption": "Clients",
+  "name": "NewPlatformFlexberryServiceBusClientListForm",
+  "className": "ClientListForm",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-service-bus-client",
+      "modelProjection": "ListView"
+    }
+  ]
+}

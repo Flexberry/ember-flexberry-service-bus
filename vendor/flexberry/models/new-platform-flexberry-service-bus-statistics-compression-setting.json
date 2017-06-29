@@ -1,0 +1,541 @@
+﻿{
+  "name": "NewPlatformFlexberryServiceBusStatisticsCompressionSetting",
+  "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+  "className": "StatisticsCompressionSetting",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "compressTo",
+      "type": "new-platform-flexberry-service-bus-statistics-interval",
+      "flexberryType": "StatisticsInterval",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "statisticsAgeCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "statisticsAgeUnits",
+      "type": "new-platform-flexberry-service-bus-time-unit",
+      "flexberryType": "TimeUnit",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "statisticsAge",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    },
+    {
+      "name": "compressFrequencyCount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "compressFrequencyUnits",
+      "type": "new-platform-flexberry-service-bus-time-unit",
+      "flexberryType": "TimeUnit",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "compressFrequency",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    },
+    {
+      "name": "nextCompressTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "Now",
+      "stored": true
+    },
+    {
+      "name": "lastCompressTime",
+      "type": "date",
+      "flexberryType": "NullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "statisticsSetting",
+      "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+      "inverse": "statisticsCompressionSetting"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "attrs": [
+        {
+          "name": "compressTo",
+          "caption": "Compress to",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "statisticsAgeCount",
+          "caption": "Statistics age count",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "statisticsAgeUnits",
+          "caption": "Statistics age units",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "statisticsAge",
+          "caption": "Statistics age",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "compressFrequencyCount",
+          "caption": "Compress frequency count",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "compressFrequencyUnits",
+          "caption": "Compress frequency units",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "compressFrequency",
+          "caption": "Compress frequency",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "nextCompressTime",
+          "caption": "Next compress time",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "lastCompressTime",
+          "caption": "Last compress time",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "DetailView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "attrs": [
+        {
+          "name": "compressTo",
+          "caption": "Compress to interval",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "statisticsAgeCount",
+          "caption": "Compress older than",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "statisticsAgeUnits",
+          "caption": "",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "compressFrequencyCount",
+          "caption": "Compress frequency",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "compressFrequencyUnits",
+          "caption": "",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "nextCompressTime",
+          "caption": "Time of next compression",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "lastCompressTime",
+          "caption": "Time of last compression",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "StatisticsSetting",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 7,
+          "caption": "",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "EditView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "attrs": [
+        {
+          "name": "compressTo",
+          "caption": "Compress to interval",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "statisticsAgeCount",
+          "caption": "Compress older than",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "statisticsAgeUnits",
+          "caption": "",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "compressFrequencyCount",
+          "caption": "Compress frequency",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "compressFrequencyUnits",
+          "caption": "",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "nextCompressTime",
+          "caption": "Time of next compression",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "lastCompressTime",
+          "caption": "Time of last compression",
+          "hidden": false,
+          "index": 15
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Subscription.Description",
+          "lookupValueField": "subscription.Description",
+          "relationName": "StatisticsSetting",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "StatisticsSetting.Subscription",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.Client",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 4
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 5
+                    }
+                  ],
+                  "index": 3,
+                  "caption": "",
+                  "name": "client",
+                  "relatedTo": "new-platform-flexberry-service-bus-client",
+                  "inverse": null
+                },
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.MessageType",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 7
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 8
+                    }
+                  ],
+                  "index": 6,
+                  "caption": "",
+                  "name": "messageType",
+                  "relatedTo": "new-platform-flexberry-service-bus-message-type",
+                  "inverse": null
+                }
+              ],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "description",
+                  "caption": "",
+                  "hidden": true,
+                  "index": 2
+                }
+              ],
+              "index": 1,
+              "caption": "",
+              "name": "subscription",
+              "relatedTo": "new-platform-flexberry-service-bus-subscription",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "caption": "Statistics setting",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ListView",
+      "modelName": "new-platform-flexberry-service-bus-statistics-compression-setting",
+      "attrs": [
+        {
+          "name": "compressTo",
+          "caption": "Compress to interval",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "statisticsAgeCount",
+          "caption": "",
+          "hidden": true,
+          "index": 10
+        },
+        {
+          "name": "statisticsAgeUnits",
+          "caption": "",
+          "hidden": true,
+          "index": 11
+        },
+        {
+          "name": "statisticsAge",
+          "caption": "Compress older than",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "compressFrequencyCount",
+          "caption": "",
+          "hidden": true,
+          "index": 13
+        },
+        {
+          "name": "compressFrequencyUnits",
+          "caption": "",
+          "hidden": true,
+          "index": 14
+        },
+        {
+          "name": "compressFrequency",
+          "caption": "Compress frequency",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "nextCompressTime",
+          "caption": "Time of next compression",
+          "hidden": false,
+          "index": 16
+        },
+        {
+          "name": "lastCompressTime",
+          "caption": "Time of last compression",
+          "hidden": false,
+          "index": 17
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "StatisticsSetting",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "StatisticsSetting.Subscription",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.Client",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 4
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 5
+                    }
+                  ],
+                  "index": 3,
+                  "caption": "",
+                  "name": "client",
+                  "relatedTo": "new-platform-flexberry-service-bus-client",
+                  "inverse": null
+                },
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "StatisticsSetting.Subscription.MessageType",
+                  "belongsTo": [],
+                  "hidden": true,
+                  "attrs": [
+                    {
+                      "name": "iD",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 7
+                    },
+                    {
+                      "name": "name",
+                      "caption": "",
+                      "hidden": true,
+                      "index": 8
+                    }
+                  ],
+                  "index": 6,
+                  "caption": "",
+                  "name": "messageType",
+                  "relatedTo": "new-platform-flexberry-service-bus-message-type",
+                  "inverse": null
+                }
+              ],
+              "hidden": true,
+              "attrs": [
+                {
+                  "name": "description",
+                  "caption": "Statistics setting",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": 1,
+              "caption": "",
+              "name": "subscription",
+              "relatedTo": "new-platform-flexberry-service-bus-subscription",
+              "inverse": null
+            }
+          ],
+          "hidden": true,
+          "attrs": [],
+          "index": 0,
+          "caption": "",
+          "name": "statisticsSetting",
+          "relatedTo": "new-platform-flexberry-service-bus-statistics-setting",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": false
+}
