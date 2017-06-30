@@ -72,7 +72,7 @@ module.exports = function(environment) {
         dbName: 'ember-app',
 
         // Flag that indicates whether offline mode in application is enabled or not.
-        offlineEnabled: true,
+        offlineEnabled: false,
 
         // Flag that indicates whether to switch to offline mode when got online connection errors or not.
         modeSwitchOnErrorsEnabled: false,

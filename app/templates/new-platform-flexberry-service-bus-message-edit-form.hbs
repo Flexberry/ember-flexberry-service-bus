@@ -1,0 +1,180 @@
+<h3 class="ui header">{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.caption'}}</h3>
+
+{{#if errorMessages}}
+  {{#each errorMessages as |currentError|}}
+    {{ui-message
+      type='error'
+      closeable=true
+      visible=true
+      title='Error occurred'
+      message=currentError
+    }}
+  {{/each}}
+{{/if}}
+<form class="ui {{state}} form flexberry-vertical-form" role="form">
+
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      <button type="submit" class="ui negative button" {{action 'delete'}}>
+        {{t "forms.edit-form.delete-button-text"}}
+      </button>
+      <button type="submit" class="ui button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.sender
+      class=(if model.errors.sender 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.sender-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.sender pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.recipient-caption'}}</label>
+    {{flexberry-lookup
+      choose='showLookupDialog'
+      remove='removeLookupValue'
+      value=model.recipient
+      displayAttributeName='name'
+      relationName='recipient'
+      projection='LookupView'
+      title=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.recipient-caption')
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=model.errors.recipient pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.messageType-caption'}}</label>
+    {{flexberry-lookup
+      choose='showLookupDialog'
+      remove='removeLookupValue'
+      value=model.messageType
+      displayAttributeName='name'
+      relationName='messageType'
+      projection='ListView'
+      title=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.messageType-caption')
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=model.errors.messageType pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.sendingTime-caption'}}</label>
+    {{flexberry-simpledatetime
+      type="datetime"
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      value=model.sendingTime
+      class=(if model.errors.sendingTime 'error' '')
+    }}
+    {{flexberry-validationmessage error=model.errors.sendingTime pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.receivingTime-caption'}}</label>
+    {{flexberry-simpledatetime
+      type="datetime"
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      value=model.receivingTime
+      class=(if model.errors.receivingTime 'error' '')
+    }}
+    {{flexberry-validationmessage error=model.errors.receivingTime pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-message-edit-form.isSending-caption'}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.isSending
+    }}
+    {{flexberry-validationmessage error=model.errors.isSending pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.group
+      class=(if model.errors.group 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.group-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.group pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.priority
+      class=(if model.errors.priority 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.priority-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.priority pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.errorCount
+      class=(if model.errors.errorCount 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.errorCount-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.errorCount pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.body
+      class=(if model.errors.body 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.body-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.body pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.attachment
+      class=(if model.errors.attachment 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.attachment-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.attachment pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.tags
+      class=(if model.errors.tags 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-message-edit-form.tags-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.tags pointing="pointing"}}
+  </div>
+
+</form>

@@ -1,0 +1,116 @@
+<h3 class="ui header">{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.caption'}}</h3>
+
+{{#if errorMessages}}
+  {{#each errorMessages as |currentError|}}
+    {{ui-message
+      type='error'
+      closeable=true
+      visible=true
+      title='Error occurred'
+      message=currentError
+    }}
+  {{/each}}
+{{/if}}
+<form class="ui {{state}} form flexberry-vertical-form" role="form">
+
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui positive button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        <button type="submit" class="ui positive button" {{action "saveAndClose"}}>
+          {{t "forms.edit-form.saveAndClose-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui negative button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.client-caption'}}</label>
+    {{flexberry-lookup
+      choose='showLookupDialog'
+      remove='removeLookupValue'
+      value=model.client
+      displayAttributeName='name'
+      relationName='client'
+      projection='LookupView'
+      title=(t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.client-caption')
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=model.errors.client pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.messageType-caption'}}</label>
+    {{flexberry-lookup
+      choose='showLookupDialog'
+      remove='removeLookupValue'
+      value=model.messageType
+      displayAttributeName='name'
+      relationName='messageType'
+      projection='ListView'
+      title=(t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.messageType-caption')
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=model.errors.messageType pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.expiryDate-caption'}}</label>
+    {{flexberry-simpledatetime
+      type="datetime"
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      value=model.expiryDate
+      class=(if model.errors.expiryDate 'error' '')
+    }}
+    {{flexberry-validationmessage error=model.errors.expiryDate pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.description
+      class=(if model.errors.description 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.description-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.description pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.isCallback-caption'}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.isCallback
+    }}
+    {{flexberry-validationmessage error=model.errors.isCallback pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-subscription-edit-form.transportType-caption'}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum 'new-platform-flexberry-service-bus-transport-type')
+      value=model.transportType
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=model.errors.transportType pointing="pointing"}}
+  </div>
+
+</form>

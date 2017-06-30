@@ -1,0 +1,34 @@
+<h3>{{t 'forms.new-platform-flexberry-service-bus-client-list-form.caption'}}</h3>
+<div class="ui {{state}} row form">
+  {{flexberry-objectlistview
+    modelName="new-platform-flexberry-service-bus-client"
+    modelProjection=modelProjection
+    editFormRoute=editFormRoute
+    content=model
+    refreshButton=true
+    createNewButton=true
+    deleteButton=true
+    showCheckBoxInRow=true
+    showDeleteButtonInRow=true
+    filterButton=true
+    enableFilters=true
+    filters=filters
+    applyFilters=(action "applyFilters")
+    resetFilters=(action "resetFilters")
+    exportExcelButton=true
+    sorting=computedSorting
+    orderable=true
+    sortByColumn=(action "sortByColumn")
+    addColumnToSorting=(action "addColumnToSorting")
+    pages=pages
+    perPageValue=perPageValue
+    perPageValues=perPageValues
+    recordsTotalCount=recordsTotalCount
+    hasPreviousPage=hasPreviousPage
+    hasNextPage=hasNextPage
+    previousPage=(action "previousPage")
+    gotoPage=(action "gotoPage")
+    nextPage=(action "nextPage")
+    componentName="NewPlatformFlexberryServiceBusClientListForm"
+  }}
+</div>
