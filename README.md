@@ -1,6 +1,11 @@
-# Ember-flexberry-service-bus
+# Ember Flexberry Service Bus
 
-This README outlines the details of collaborating on this Ember addon.
+There is everything you need to manage instances of Flexberry Service Bus.
+
+## Usage
+
+* `ember install ember-flexberry-service-bus`
+* Configure your router, [example there](https://github.com/Flexberry/ember-flexberry-service-bus/blob/1d2d802a57406960ca4db6834598c0353799b063/tests/dummy/app/router.js#L9-L65).
 
 ## Installation
 

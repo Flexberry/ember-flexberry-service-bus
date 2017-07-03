@@ -1,7 +1,7 @@
 {
   "name": "ember-flexberry-service-bus",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "There is everything you need to manage instances of Flexberry Service Bus.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,18 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flexberry/ember-flexberry-service-bus.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Flexberry PLATFORM",
+    "email": "mail@flexberry.net",
+    "url": "http://flexberry.net/"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
