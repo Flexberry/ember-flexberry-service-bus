@@ -1,6 +1,6 @@
 {
   "name": "ember-flexberry-service-bus",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.1",
   "description": "There is everything you need to manage instances of Flexberry Service Bus.",
   "directories": {
     "doc": "doc",
