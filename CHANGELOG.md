@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.0-beta.2] - 2017-07-10
+
+### Fixed
+
+* Added global export for all locales, can use as `import translations from 'ember-flexberry-service-bus/locales/en/translations'`.
+
+### Changed
+
+* Updated dependency on `ember-flexberry` to `0.9.0-beta.13` version.
+
 ## [0.1.0-beta.1] - 2017-07-03
 
 ### Added
