@@ -2,21 +2,21 @@ export default {
   projections: {
     AuditView: {
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         iD: {
-          caption: 'ID'
+          __caption__: 'ID'
         }
       }
     },
     DetailView: {
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       client: {
-        caption: ''
+        __caption__: ''
       }
     }
   }

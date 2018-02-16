@@ -72,6 +72,7 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('ListView', 'new-platform-flexberry-service-bus-statistics-monitor', {
+    owner: Projection.attr('Owner', { hidden: true }),
     name: Projection.attr('Name'),
     public: Projection.attr('Public')
   });

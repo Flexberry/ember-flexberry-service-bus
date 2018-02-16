@@ -2,57 +2,57 @@ export default {
   projections: {
     AuditView: {
       number: {
-        caption: 'Номер'
+        __caption__: 'Номер'
       },
       category: {
-        caption: 'Категория'
+        __caption__: 'Категория'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       subscription: {
-        caption: 'Подписка',
+        __caption__: 'Подписка',
         description: {
-          caption: 'Описание'
+          __caption__: 'Описание'
         }
       }
     },
     DetailView: {
       number: {
-        caption: 'Номер'
+        __caption__: 'Номер'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       category: {
-        caption: 'Категория'
+        __caption__: 'Категория'
       },
       subscription: {
-        caption: 'Подписка',
+        __caption__: 'Подписка',
         description: {
-          caption: ''
+          __caption__: ''
         },
         client: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         messageType: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         }
       },
       statisticsMonitor: {
-        caption: ''
+        __caption__: ''
       }
     }
   }

@@ -2,118 +2,118 @@ export default {
   projections: {
     AuditView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       address: {
-        caption: 'Address'
+        __caption__: 'Address'
       },
       dnsIdentity: {
-        caption: 'Dns identity'
+        __caption__: 'Dns identity'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       },
       sendingPermissions: {
-        caption: 'Sending permissions',
+        __caption__: 'Sending permissions',
         messageType: {
-          caption: 'Message type',
+          __caption__: 'Message type',
           iD: {
-            caption: 'ID'
+            __caption__: 'ID'
           }
         }
       },
       subscriptions: {
-        caption: 'Subscriptions',
+        __caption__: 'Subscriptions',
         description: {
-          caption: 'Description'
+          __caption__: 'Description'
         },
         expiryDate: {
-          caption: 'Expiry date'
+          __caption__: 'Expiry date'
         },
         isCallback: {
-          caption: 'Is callback'
+          __caption__: 'Is callback'
         },
         transportType: {
-          caption: 'Transport type'
+          __caption__: 'Transport type'
         },
         messageType: {
-          caption: 'Message type',
+          __caption__: 'Message type',
           iD: {
-            caption: 'ID'
+            __caption__: 'ID'
           }
         }
       }
     },
     EditView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       address: {
-        caption: 'Address'
+        __caption__: 'Address'
       },
       dnsIdentity: {
-        caption: 'DNS Identity'
+        __caption__: 'DNS Identity'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       },
       subscriptions: {
-        caption: 'Subscriptions',
+        __caption__: 'Subscriptions',
         isCallback: {
-          caption: 'Callback'
+          __caption__: 'Callback'
         },
         messageType: {
-          caption: 'Message type',
+          __caption__: 'Message type',
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         expiryDate: {
-          caption: 'Expiry date'
+          __caption__: 'Expiry date'
         },
         transportType: {
-          caption: 'Transport type'
+          __caption__: 'Transport type'
         },
         client: {
-          caption: ''
+          __caption__: ''
         }
       },
       sendingPermissions: {
-        caption: 'Sending permissions',
+        __caption__: 'Sending permissions',
         messageType: {
-          caption: 'Message type',
+          __caption__: 'Message type',
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         client: {
-          caption: ''
+          __caption__: ''
         }
       }
     },
     ListView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       address: {
-        caption: 'Address'
+        __caption__: 'Address'
       }
     },
     LookupView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       }
     }
   }

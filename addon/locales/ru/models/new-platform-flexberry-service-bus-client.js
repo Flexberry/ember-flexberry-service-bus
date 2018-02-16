@@ -2,118 +2,118 @@ export default {
   projections: {
     AuditView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       address: {
-        caption: 'Адрес'
+        __caption__: 'Адрес'
       },
       dnsIdentity: {
-        caption: 'Dns identity'
+        __caption__: 'Dns identity'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       },
       sendingPermissions: {
-        caption: 'Разрешения на отправку',
+        __caption__: 'Разрешения на отправку',
         messageType: {
-          caption: 'Тип сообщения',
+          __caption__: 'Тип сообщения',
           iD: {
-            caption: 'Идентификатор'
+            __caption__: 'Идентификатор'
           }
         }
       },
       subscriptions: {
-        caption: 'Подписки',
+        __caption__: 'Подписки',
         description: {
-          caption: 'Описание'
+          __caption__: 'Описание'
         },
         expiryDate: {
-          caption: 'Срок действия'
+          __caption__: 'Срок действия'
         },
         isCallback: {
-          caption: 'Callback'
+          __caption__: 'Callback'
         },
         transportType: {
-          caption: 'Способ передачи'
+          __caption__: 'Способ передачи'
         },
         messageType: {
-          caption: 'Тип сообщения',
+          __caption__: 'Тип сообщения',
           iD: {
-            caption: 'Идентификатор'
+            __caption__: 'Идентификатор'
           }
         }
       }
     },
     EditView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       address: {
-        caption: 'Адрес'
+        __caption__: 'Адрес'
       },
       dnsIdentity: {
-        caption: 'DNS Identity'
+        __caption__: 'DNS Identity'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       },
       subscriptions: {
-        caption: 'Подписки',
+        __caption__: 'Подписки',
         isCallback: {
-          caption: 'Callback'
+          __caption__: 'Callback'
         },
         messageType: {
-          caption: 'Тип сообщения',
+          __caption__: 'Тип сообщения',
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         expiryDate: {
-          caption: 'Срок действия'
+          __caption__: 'Срок действия'
         },
         transportType: {
-          caption: 'Способ передачи'
+          __caption__: 'Способ передачи'
         },
         client: {
-          caption: ''
+          __caption__: ''
         }
       },
       sendingPermissions: {
-        caption: 'Разрешения на отправку',
+        __caption__: 'Разрешения на отправку',
         messageType: {
-          caption: 'Тип сообщения',
+          __caption__: 'Тип сообщения',
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         client: {
-          caption: ''
+          __caption__: ''
         }
       }
     },
     ListView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       address: {
-        caption: 'Адрес'
+        __caption__: 'Адрес'
       }
     },
     LookupView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       }
     }
   }

@@ -2,89 +2,89 @@ export default {
   projections: {
     AuditView: {
       owner: {
-        caption: 'Owner'
+        __caption__: 'Owner'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       public: {
-        caption: 'Public'
+        __caption__: 'Public'
       },
       subscriptionStatisticsMonitor: {
-        caption: 'Subscription statistics monitor',
+        __caption__: 'Subscription statistics monitor',
         number: {
-          caption: 'Number'
+          __caption__: 'Number'
         },
         category: {
-          caption: 'Category'
+          __caption__: 'Category'
         },
         name: {
-          caption: 'Name'
+          __caption__: 'Name'
         },
         subscription: {
-          caption: 'Subscription',
+          __caption__: 'Subscription',
           description: {
-            caption: 'Description'
+            __caption__: 'Description'
           }
         }
       }
     },
     EditView: {
       owner: {
-        caption: ''
+        __caption__: ''
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       public: {
-        caption: 'Public'
+        __caption__: 'Public'
       },
       subscriptionStatisticsMonitor: {
-        caption: 'Subscriptions statistics monitor',
+        __caption__: 'Subscriptions statistics monitor',
         number: {
-          caption: 'Number'
+          __caption__: 'Number'
         },
         name: {
-          caption: 'Name'
+          __caption__: 'Name'
         },
         category: {
-          caption: 'Category'
+          __caption__: 'Category'
         },
         subscription: {
-          caption: 'Subscription',
+          __caption__: 'Subscription',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         },
         statisticsMonitor: {
-          caption: ''
+          __caption__: ''
         }
       }
     },
     ListView: {
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       public: {
-        caption: 'Public'
+        __caption__: 'Public'
       }
     }
   }

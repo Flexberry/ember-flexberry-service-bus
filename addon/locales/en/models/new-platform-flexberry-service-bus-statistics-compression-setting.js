@@ -2,163 +2,163 @@ export default {
   projections: {
     AuditView: {
       compressTo: {
-        caption: 'Compress to'
+        __caption__: 'Compress to'
       },
       statisticsAgeCount: {
-        caption: 'Statistics age count'
+        __caption__: 'Statistics age count'
       },
       statisticsAgeUnits: {
-        caption: 'Statistics age units'
+        __caption__: 'Statistics age units'
       },
       statisticsAge: {
-        caption: 'Statistics age'
+        __caption__: 'Statistics age'
       },
       compressFrequencyCount: {
-        caption: 'Compress frequency count'
+        __caption__: 'Compress frequency count'
       },
       compressFrequencyUnits: {
-        caption: 'Compress frequency units'
+        __caption__: 'Compress frequency units'
       },
       compressFrequency: {
-        caption: 'Compress frequency'
+        __caption__: 'Compress frequency'
       },
       nextCompressTime: {
-        caption: 'Next compress time'
+        __caption__: 'Next compress time'
       },
       lastCompressTime: {
-        caption: 'Last compress time'
+        __caption__: 'Last compress time'
       }
     },
     DetailView: {
       compressTo: {
-        caption: 'Compress to interval'
+        __caption__: 'Compress to interval'
       },
       statisticsAgeCount: {
-        caption: 'Compress older than'
+        __caption__: 'Compress older than'
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyCount: {
-        caption: 'Compress frequency'
+        __caption__: 'Compress frequency'
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       nextCompressTime: {
-        caption: 'Time of next compression'
+        __caption__: 'Time of next compression'
       },
       lastCompressTime: {
-        caption: 'Time of last compression'
+        __caption__: 'Time of last compression'
       },
       statisticsSetting: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       statisticsSetting: {
-        caption: 'Statistics setting',
+        __caption__: 'Statistics setting',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       compressTo: {
-        caption: 'Compress to interval'
+        __caption__: 'Compress to interval'
       },
       statisticsAgeCount: {
-        caption: 'Compress older than'
+        __caption__: 'Compress older than'
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyCount: {
-        caption: 'Compress frequency'
+        __caption__: 'Compress frequency'
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       nextCompressTime: {
-        caption: 'Time of next compression'
+        __caption__: 'Time of next compression'
       },
       lastCompressTime: {
-        caption: 'Time of last compression'
+        __caption__: 'Time of last compression'
       }
     },
     ListView: {
       statisticsSetting: {
-        caption: '',
+        __caption__: '',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: 'Statistics setting'
+            __caption__: 'Statistics setting'
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       compressTo: {
-        caption: 'Compress to interval'
+        __caption__: 'Compress to interval'
       },
       statisticsAgeCount: {
-        caption: ''
+        __caption__: ''
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       statisticsAge: {
-        caption: 'Compress older than'
+        __caption__: 'Compress older than'
       },
       compressFrequencyCount: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequency: {
-        caption: 'Compress frequency'
+        __caption__: 'Compress frequency'
       },
       nextCompressTime: {
-        caption: 'Time of next compression'
+        __caption__: 'Time of next compression'
       },
       lastCompressTime: {
-        caption: 'Time of last compression'
+        __caption__: 'Time of last compression'
       }
     }
   }

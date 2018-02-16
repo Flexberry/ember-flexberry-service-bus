@@ -2,140 +2,140 @@ export default {
   projections: {
     DetailView: {
       since: {
-        caption: 'Start interval'
+        __caption__: 'Start interval'
       },
       to: {
-        caption: 'End interval'
+        __caption__: 'End interval'
       },
       statisticsInterval: {
-        caption: 'Interval'
+        __caption__: 'Interval'
       },
       sentCount: {
-        caption: 'Messages sent'
+        __caption__: 'Messages sent'
       },
       receivedCount: {
-        caption: 'Messages received'
+        __caption__: 'Messages received'
       },
       errorsCount: {
-        caption: 'Errors (including repeated)'
+        __caption__: 'Errors (including repeated)'
       },
       uniqueErrorsCount: {
-        caption: 'Unique errors (without repeated)'
+        __caption__: 'Unique errors (without repeated)'
       },
       statisticsSetting: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       statisticsSetting: {
-        caption: 'Statistics setting',
+        __caption__: 'Statistics setting',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       since: {
-        caption: 'Start interval'
+        __caption__: 'Start interval'
       },
       to: {
-        caption: 'End interval'
+        __caption__: 'End interval'
       },
       statisticsInterval: {
-        caption: 'Interval'
+        __caption__: 'Interval'
       },
       sentCount: {
-        caption: 'Messages sent'
+        __caption__: 'Messages sent'
       },
       receivedCount: {
-        caption: 'Messages received'
+        __caption__: 'Messages received'
       },
       errorsCount: {
-        caption: 'Errors (including repeated)'
+        __caption__: 'Errors (including repeated)'
       },
       uniqueErrorsCount: {
-        caption: 'Unique errors (without repeated)'
+        __caption__: 'Unique errors (without repeated)'
       },
       connectionCount: {
-        caption: 'Outgoing connections'
+        __caption__: 'Outgoing connections'
       },
       queueLength: {
-        caption: 'Queue at end of interval'
+        __caption__: 'Queue at end of interval'
       },
       sentAvgTime: {
-        caption: 'Sent average time'
+        __caption__: 'Sent average time'
       },
       queryAvgTime: {
-        caption: 'Query average time'
+        __caption__: 'Query average time'
       }
     },
     ListView: {
       statisticsSetting: {
-        caption: '',
+        __caption__: '',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: 'Statistics setting'
+            __caption__: 'Statistics setting'
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       since: {
-        caption: 'Start interval'
+        __caption__: 'Start interval'
       },
       to: {
-        caption: 'End interval'
+        __caption__: 'End interval'
       },
       statisticsInterval: {
-        caption: 'Interval'
+        __caption__: 'Interval'
       },
       sentCount: {
-        caption: 'Messages sent'
+        __caption__: 'Messages sent'
       },
       receivedCount: {
-        caption: 'Messages received'
+        __caption__: 'Messages received'
       },
       errorsCount: {
-        caption: 'Errors (including repeated)'
+        __caption__: 'Errors (including repeated)'
       },
       uniqueErrorsCount: {
-        caption: 'Unique errors (without repeated)'
+        __caption__: 'Unique errors (without repeated)'
       }
     }
   }

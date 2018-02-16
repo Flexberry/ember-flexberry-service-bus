@@ -144,16 +144,22 @@
       "modelName": "new-platform-flexberry-service-bus-statistics-monitor",
       "attrs": [
         {
+          "name": "owner",
+          "caption": "Owner",
+          "hidden": true,
+          "index": 0
+        },
+        {
           "name": "name",
           "caption": "Name",
           "hidden": false,
-          "index": 0
+          "index": 1
         },
         {
           "name": "public",
           "caption": "Public",
           "hidden": false,
-          "index": 1
+          "index": 2
         }
       ],
       "belongsTo": [],

@@ -2,163 +2,163 @@ export default {
   projections: {
     AuditView: {
       compressTo: {
-        caption: 'Сжимать до'
+        __caption__: 'Сжимать до'
       },
       statisticsAgeCount: {
-        caption: 'Сжимать старше чем (количество)'
+        __caption__: 'Сжимать старше чем (количество)'
       },
       statisticsAgeUnits: {
-        caption: 'Сжимать старше чем (еденицы)'
+        __caption__: 'Сжимать старше чем (еденицы)'
       },
       statisticsAge: {
-        caption: 'Сжимать старше чем'
+        __caption__: 'Сжимать старше чем'
       },
       compressFrequencyCount: {
-        caption: 'Частота сжатия (количество)'
+        __caption__: 'Частота сжатия (количество)'
       },
       compressFrequencyUnits: {
-        caption: 'Частота сжатия (еденицы)'
+        __caption__: 'Частота сжатия (еденицы)'
       },
       compressFrequency: {
-        caption: 'Частота сжатия'
+        __caption__: 'Частота сжатия'
       },
       nextCompressTime: {
-        caption: 'Время следующего сжатия'
+        __caption__: 'Время следующего сжатия'
       },
       lastCompressTime: {
-        caption: 'Время последнего сжатия'
+        __caption__: 'Время последнего сжатия'
       }
     },
     DetailView: {
       compressTo: {
-        caption: 'Сжимать до интервала'
+        __caption__: 'Сжимать до интервала'
       },
       statisticsAgeCount: {
-        caption: 'Сжимать старше чем'
+        __caption__: 'Сжимать старше чем'
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyCount: {
-        caption: 'Частота сжатия'
+        __caption__: 'Частота сжатия'
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       nextCompressTime: {
-        caption: 'Время следующего сжатия'
+        __caption__: 'Время следующего сжатия'
       },
       lastCompressTime: {
-        caption: 'Время последнего сжатия'
+        __caption__: 'Время последнего сжатия'
       },
       statisticsSetting: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       statisticsSetting: {
-        caption: 'Настройка регистрации статистики',
+        __caption__: 'Настройка регистрации статистики',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       compressTo: {
-        caption: 'Сжимать до интервала'
+        __caption__: 'Сжимать до интервала'
       },
       statisticsAgeCount: {
-        caption: 'Сжимать старше чем'
+        __caption__: 'Сжимать старше чем'
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyCount: {
-        caption: 'Частота сжатия'
+        __caption__: 'Частота сжатия'
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       nextCompressTime: {
-        caption: 'Время следующего сжатия'
+        __caption__: 'Время следующего сжатия'
       },
       lastCompressTime: {
-        caption: 'Время последнего сжатия'
+        __caption__: 'Время последнего сжатия'
       }
     },
     ListView: {
       statisticsSetting: {
-        caption: '',
+        __caption__: '',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: 'Настройка регистрации статистики'
+            __caption__: 'Настройка регистрации статистики'
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       compressTo: {
-        caption: 'Сжимать до интервала'
+        __caption__: 'Сжимать до интервала'
       },
       statisticsAgeCount: {
-        caption: ''
+        __caption__: ''
       },
       statisticsAgeUnits: {
-        caption: ''
+        __caption__: ''
       },
       statisticsAge: {
-        caption: 'Сжимать старше чем'
+        __caption__: 'Сжимать старше чем'
       },
       compressFrequencyCount: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequencyUnits: {
-        caption: ''
+        __caption__: ''
       },
       compressFrequency: {
-        caption: 'Частота сжатия'
+        __caption__: 'Частота сжатия'
       },
       nextCompressTime: {
-        caption: 'Время следующего сжатия'
+        __caption__: 'Время следующего сжатия'
       },
       lastCompressTime: {
-        caption: 'Время последнего сжатия'
+        __caption__: 'Время последнего сжатия'
       }
     }
   }

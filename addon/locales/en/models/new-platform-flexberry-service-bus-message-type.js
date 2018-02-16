@@ -2,32 +2,32 @@ export default {
   projections: {
     AuditView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       }
     },
     EditView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       }
     },
     ListView: {
       iD: {
-        caption: 'ID'
+        __caption__: 'ID'
       },
       name: {
-        caption: 'Name'
+        __caption__: 'Name'
       }
     }
   }

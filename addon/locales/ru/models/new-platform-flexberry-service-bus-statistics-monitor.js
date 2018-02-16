@@ -2,89 +2,89 @@ export default {
   projections: {
     AuditView: {
       owner: {
-        caption: 'Владелец'
+        __caption__: 'Владелец'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       public: {
-        caption: 'Общедоступный'
+        __caption__: 'Общедоступный'
       },
       subscriptionStatisticsMonitor: {
-        caption: 'Подписка монитора статистики',
+        __caption__: 'Подписка монитора статистики',
         number: {
-          caption: 'Номер'
+          __caption__: 'Номер'
         },
         category: {
-          caption: 'Категория'
+          __caption__: 'Категория'
         },
         name: {
-          caption: 'Имя'
+          __caption__: 'Имя'
         },
         subscription: {
-          caption: 'Подписка',
+          __caption__: 'Подписка',
           description: {
-            caption: 'Описание'
+            __caption__: 'Описание'
           }
         }
       }
     },
     EditView: {
       owner: {
-        caption: ''
+        __caption__: ''
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       public: {
-        caption: 'Общедоступный'
+        __caption__: 'Общедоступный'
       },
       subscriptionStatisticsMonitor: {
-        caption: 'Подписка монитора статистики',
+        __caption__: 'Подписка монитора статистики',
         number: {
-          caption: 'Номер'
+          __caption__: 'Номер'
         },
         name: {
-          caption: 'Имя'
+          __caption__: 'Имя'
         },
         category: {
-          caption: 'Категория'
+          __caption__: 'Категория'
         },
         subscription: {
-          caption: 'Подписка',
+          __caption__: 'Подписка',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         },
         statisticsMonitor: {
-          caption: ''
+          __caption__: ''
         }
       }
     },
     ListView: {
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       public: {
-        caption: 'Общедоступный'
+        __caption__: 'Общедоступный'
       }
     }
   }

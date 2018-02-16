@@ -2,104 +2,104 @@ export default {
   projections: {
     EditView: {
       sender: {
-        caption: 'Sender'
+        __caption__: 'Sender'
       },
       recipient: {
-        caption: 'Recipient',
+        __caption__: 'Recipient',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       sendingTime: {
-        caption: 'Sending time'
+        __caption__: 'Sending time'
       },
       receivingTime: {
-        caption: 'Receiving time'
+        __caption__: 'Receiving time'
       },
       isSending: {
-        caption: 'Is sending'
+        __caption__: 'Is sending'
       },
       group: {
-        caption: 'Group'
+        __caption__: 'Group'
       },
       priority: {
-        caption: 'Priority'
+        __caption__: 'Priority'
       },
       errorCount: {
-        caption: 'Error count'
+        __caption__: 'Error count'
       },
       body: {
-        caption: 'Body'
+        __caption__: 'Body'
       },
       attachment: {
-        caption: 'Attachment'
+        __caption__: 'Attachment'
       },
       tags: {
-        caption: 'Tags'
+        __caption__: 'Tags'
       }
     },
     ListView: {
       sender: {
-        caption: 'Sender'
+        __caption__: 'Sender'
       },
       recipient: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Recipient'
+          __caption__: 'Recipient'
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Message type'
+          __caption__: 'Message type'
         }
       },
       sendingTime: {
-        caption: 'Sending time'
+        __caption__: 'Sending time'
       },
       receivingTime: {
-        caption: 'Receiving time'
+        __caption__: 'Receiving time'
       },
       isSending: {
-        caption: 'Is sending'
+        __caption__: 'Is sending'
       },
       priority: {
-        caption: 'Priority'
+        __caption__: 'Priority'
       },
       errorCount: {
-        caption: 'Error count'
+        __caption__: 'Error count'
       }
     },
     LookupView: {
       sender: {
-        caption: 'Sender'
+        __caption__: 'Sender'
       },
       recipient: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Recipient'
+          __caption__: 'Recipient'
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Message type'
+          __caption__: 'Message type'
         }
       },
       sendingTime: {
-        caption: 'Sending time'
+        __caption__: 'Sending time'
       },
       receivingTime: {
-        caption: 'Receiving time'
+        __caption__: 'Receiving time'
       },
       errorCount: {
-        caption: 'Error count'
+        __caption__: 'Error count'
       }
     }
   }

@@ -2,140 +2,140 @@ export default {
   projections: {
     DetailView: {
       since: {
-        caption: 'Начало интервала'
+        __caption__: 'Начало интервала'
       },
       to: {
-        caption: 'Конец интервала'
+        __caption__: 'Конец интервала'
       },
       statisticsInterval: {
-        caption: 'Интервал'
+        __caption__: 'Интервал'
       },
       sentCount: {
-        caption: 'Сообщений отправлено'
+        __caption__: 'Сообщений отправлено'
       },
       receivedCount: {
-        caption: 'Сообщений получено'
+        __caption__: 'Сообщений получено'
       },
       errorsCount: {
-        caption: 'Ошибки (включая повторные)'
+        __caption__: 'Ошибки (включая повторные)'
       },
       uniqueErrorsCount: {
-        caption: 'Уникальные ошибки (не включая повторные)'
+        __caption__: 'Уникальные ошибки (не включая повторные)'
       },
       statisticsSetting: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       statisticsSetting: {
-        caption: 'Настройка регистрации статистики',
+        __caption__: 'Настройка регистрации статистики',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: ''
+            __caption__: ''
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       since: {
-        caption: 'Начало интервала'
+        __caption__: 'Начало интервала'
       },
       to: {
-        caption: 'Конец интервала'
+        __caption__: 'Конец интервала'
       },
       statisticsInterval: {
-        caption: 'Интервал'
+        __caption__: 'Интервал'
       },
       sentCount: {
-        caption: 'Сообщений отправлено'
+        __caption__: 'Сообщений отправлено'
       },
       receivedCount: {
-        caption: 'Сообщений получено'
+        __caption__: 'Сообщений получено'
       },
       errorsCount: {
-        caption: 'Ошибки (включая повторные)'
+        __caption__: 'Ошибки (включая повторные)'
       },
       uniqueErrorsCount: {
-        caption: 'Уникальные ошибки (не включая повторные)'
+        __caption__: 'Уникальные ошибки (не включая повторные)'
       },
       connectionCount: {
-        caption: 'Исходящих соединений'
+        __caption__: 'Исходящих соединений'
       },
       queueLength: {
-        caption: 'Очередь на конец интервала'
+        __caption__: 'Очередь на конец интервала'
       },
       sentAvgTime: {
-        caption: 'Среднее время отправки'
+        __caption__: 'Среднее время отправки'
       },
       queryAvgTime: {
-        caption: 'Среднее время запроса'
+        __caption__: 'Среднее время запроса'
       }
     },
     ListView: {
       statisticsSetting: {
-        caption: '',
+        __caption__: '',
         subscription: {
-          caption: '',
+          __caption__: '',
           description: {
-            caption: 'Настройка регистрации статистики'
+            __caption__: 'Настройка регистрации статистики'
           },
           client: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           },
           messageType: {
-            caption: '',
+            __caption__: '',
             iD: {
-              caption: ''
+              __caption__: ''
             },
             name: {
-              caption: ''
+              __caption__: ''
             }
           }
         }
       },
       since: {
-        caption: 'Начало интервала'
+        __caption__: 'Начало интервала'
       },
       to: {
-        caption: 'Конец интервала'
+        __caption__: 'Конец интервала'
       },
       statisticsInterval: {
-        caption: 'Интервал'
+        __caption__: 'Интервал'
       },
       sentCount: {
-        caption: 'Сообщений отправлено'
+        __caption__: 'Сообщений отправлено'
       },
       receivedCount: {
-        caption: 'Сообщений получено'
+        __caption__: 'Сообщений получено'
       },
       errorsCount: {
-        caption: 'Ошибки (включая повторные)'
+        __caption__: 'Ошибки (включая повторные)'
       },
       uniqueErrorsCount: {
-        caption: 'Уникальные ошибки (не включая повторные)'
+        __caption__: 'Уникальные ошибки (не включая повторные)'
       }
     }
   }

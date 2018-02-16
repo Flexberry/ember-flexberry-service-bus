@@ -2,122 +2,122 @@ export default {
   projections: {
     AuditView: {
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       },
       expiryDate: {
-        caption: 'Срок действия'
+        __caption__: 'Срок действия'
       },
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       transportType: {
-        caption: 'Способ передачи'
+        __caption__: 'Способ передачи'
       },
       messageType: {
-        caption: 'Тип сообщения',
+        __caption__: 'Тип сообщения',
         iD: {
-          caption: 'Идентификатор'
+          __caption__: 'Идентификатор'
         }
       }
     },
     DetailView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       messageType: {
-        caption: 'Тип сообщения',
+        __caption__: 'Тип сообщения',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       expiryDate: {
-        caption: 'Срок действия'
+        __caption__: 'Срок действия'
       },
       transportType: {
-        caption: 'Способ передачи'
+        __caption__: 'Способ передачи'
       },
       client: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       client: {
-        caption: 'Клиент',
+        __caption__: 'Клиент',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       messageType: {
-        caption: 'Тип сообщения',
+        __caption__: 'Тип сообщения',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       expiryDate: {
-        caption: 'Срок действия'
+        __caption__: 'Срок действия'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       },
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       transportType: {
-        caption: 'Способ передачи'
+        __caption__: 'Способ передачи'
       }
     },
     ListView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       client: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Клиент'
+          __caption__: 'Клиент'
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Тип сообщения'
+          __caption__: 'Тип сообщения'
         }
       },
       expiryDate: {
-        caption: 'Срок действия'
+        __caption__: 'Срок действия'
       },
       transportType: {
-        caption: 'Способ передачи'
+        __caption__: 'Способ передачи'
       }
     },
     LookupView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       },
       expiryDate: {
-        caption: 'Срок действия'
+        __caption__: 'Срок действия'
       },
       transportType: {
-        caption: 'Способ передачи'
+        __caption__: 'Способ передачи'
       },
       client: {
-        caption: '',
+        __caption__: '',
         iD: {
-          caption: ''
+          __caption__: ''
         },
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         iD: {
-          caption: ''
+          __caption__: ''
         },
         name: {
-          caption: ''
+          __caption__: ''
         }
       }
     }

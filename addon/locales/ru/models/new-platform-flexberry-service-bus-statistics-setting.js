@@ -2,144 +2,144 @@ export default {
   projections: {
     AuditView: {
       subscription: {
-        caption: 'Подписка',
+        __caption__: 'Подписка',
         description: {
-          caption: 'Описание'
+          __caption__: 'Описание'
         }
       },
       statisticsCompressionSetting: {
-        caption: 'Настройка сжатия статистики',
+        __caption__: 'Настройка сжатия статистики',
         compressTo: {
-          caption: 'Сжимать до'
+          __caption__: 'Сжимать до'
         },
         statisticsAgeCount: {
-          caption: 'Сжимать старше чем (количество)'
+          __caption__: 'Сжимать старше чем (количество)'
         },
         statisticsAgeUnits: {
-          caption: 'Сжимать старше чем (еденицы)'
+          __caption__: 'Сжимать старше чем (еденицы)'
         },
         statisticsAge: {
-          caption: 'Сжимать старше чем'
+          __caption__: 'Сжимать старше чем'
         },
         compressFrequencyCount: {
-          caption: 'Частота сжатия (количество)'
+          __caption__: 'Частота сжатия (количество)'
         },
         compressFrequencyUnits: {
-          caption: 'Частота сжатия (еденицы)'
+          __caption__: 'Частота сжатия (еденицы)'
         },
         compressFrequency: {
-          caption: 'Частота сжатия'
+          __caption__: 'Частота сжатия'
         },
         nextCompressTime: {
-          caption: 'Время следующего сжатия'
+          __caption__: 'Время следующего сжатия'
         },
         lastCompressTime: {
-          caption: 'Время последнего сжатия'
+          __caption__: 'Время последнего сжатия'
         }
       }
     },
     EditView: {
       subscription: {
-        caption: 'Подписка',
+        __caption__: 'Подписка',
         description: {
-          caption: ''
+          __caption__: ''
         },
         client: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         messageType: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         }
       },
       statisticsCompressionSetting: {
-        caption: 'Настройка сжатия статистики',
+        __caption__: 'Настройка сжатия статистики',
         compressTo: {
-          caption: 'Сжимать до интервала'
+          __caption__: 'Сжимать до интервала'
         },
         statisticsAgeCount: {
-          caption: 'Сжимать старше чем'
+          __caption__: 'Сжимать старше чем'
         },
         statisticsAgeUnits: {
-          caption: ''
+          __caption__: ''
         },
         compressFrequencyCount: {
-          caption: 'Частота сжатия'
+          __caption__: 'Частота сжатия'
         },
         compressFrequencyUnits: {
-          caption: ''
+          __caption__: ''
         },
         nextCompressTime: {
-          caption: 'Время следующего сжатия'
+          __caption__: 'Время следующего сжатия'
         },
         lastCompressTime: {
-          caption: 'Время последнего сжатия'
+          __caption__: 'Время последнего сжатия'
         },
         statisticsSetting: {
-          caption: ''
+          __caption__: ''
         }
       },
       statisticsRecord: {
-        caption: 'Запись статистики',
+        __caption__: 'Запись статистики',
         since: {
-          caption: 'Начало интервала'
+          __caption__: 'Начало интервала'
         },
         to: {
-          caption: 'Конец интервала'
+          __caption__: 'Конец интервала'
         },
         statisticsInterval: {
-          caption: 'Интервал'
+          __caption__: 'Интервал'
         },
         sentCount: {
-          caption: 'Сообщений отправлено'
+          __caption__: 'Сообщений отправлено'
         },
         receivedCount: {
-          caption: 'Сообщений получено'
+          __caption__: 'Сообщений получено'
         },
         errorsCount: {
-          caption: 'Ошибки (включая повторные)'
+          __caption__: 'Ошибки (включая повторные)'
         },
         uniqueErrorsCount: {
-          caption: 'Уникальные ошибки (не включая повторные)'
+          __caption__: 'Уникальные ошибки (не включая повторные)'
         },
         statisticsSetting: {
-          caption: ''
+          __caption__: ''
         }
       }
     },
     ListView: {
       subscription: {
-        caption: '',
+        __caption__: '',
         description: {
-          caption: 'Подписка'
+          __caption__: 'Подписка'
         },
         client: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         },
         messageType: {
-          caption: '',
+          __caption__: '',
           iD: {
-            caption: ''
+            __caption__: ''
           },
           name: {
-            caption: ''
+            __caption__: ''
           }
         }
       }

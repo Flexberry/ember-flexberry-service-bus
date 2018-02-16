@@ -2,122 +2,122 @@ export default {
   projections: {
     AuditView: {
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       },
       expiryDate: {
-        caption: 'Expiry date'
+        __caption__: 'Expiry date'
       },
       isCallback: {
-        caption: 'Is callback'
+        __caption__: 'Is callback'
       },
       transportType: {
-        caption: 'Transport type'
+        __caption__: 'Transport type'
       },
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         iD: {
-          caption: 'ID'
+          __caption__: 'ID'
         }
       }
     },
     DetailView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       expiryDate: {
-        caption: 'Expiry date'
+        __caption__: 'Expiry date'
       },
       transportType: {
-        caption: 'Transport type'
+        __caption__: 'Transport type'
       },
       client: {
-        caption: ''
+        __caption__: ''
       }
     },
     EditView: {
       client: {
-        caption: 'Client',
+        __caption__: 'Client',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       messageType: {
-        caption: 'Message type',
+        __caption__: 'Message type',
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       expiryDate: {
-        caption: 'Expiry date'
+        __caption__: 'Expiry date'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       },
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       transportType: {
-        caption: 'Transport type'
+        __caption__: 'Transport type'
       }
     },
     ListView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       client: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Client'
+          __caption__: 'Client'
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         name: {
-          caption: 'Message type'
+          __caption__: 'Message type'
         }
       },
       expiryDate: {
-        caption: 'Expiry date'
+        __caption__: 'Expiry date'
       },
       transportType: {
-        caption: 'Transport type'
+        __caption__: 'Transport type'
       }
     },
     LookupView: {
       isCallback: {
-        caption: 'Callback'
+        __caption__: 'Callback'
       },
       description: {
-        caption: 'Description'
+        __caption__: 'Description'
       },
       expiryDate: {
-        caption: 'Expiry date'
+        __caption__: 'Expiry date'
       },
       transportType: {
-        caption: 'Transport type'
+        __caption__: 'Transport type'
       },
       client: {
-        caption: '',
+        __caption__: '',
         iD: {
-          caption: ''
+          __caption__: ''
         },
         name: {
-          caption: ''
+          __caption__: ''
         }
       },
       messageType: {
-        caption: '',
+        __caption__: '',
         iD: {
-          caption: ''
+          __caption__: ''
         },
         name: {
-          caption: ''
+          __caption__: ''
         }
       }
     }

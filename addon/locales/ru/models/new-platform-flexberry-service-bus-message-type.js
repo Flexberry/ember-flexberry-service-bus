@@ -2,32 +2,32 @@ export default {
   projections: {
     AuditView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       }
     },
     EditView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       },
       description: {
-        caption: 'Описание'
+        __caption__: 'Описание'
       }
     },
     ListView: {
       iD: {
-        caption: 'Идентификатор'
+        __caption__: 'Идентификатор'
       },
       name: {
-        caption: 'Имя'
+        __caption__: 'Имя'
       }
     }
   }
