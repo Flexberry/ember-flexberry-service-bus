@@ -6,5 +6,7 @@ export default {
   'dnsIdentity-caption': 'DNS Identity',
   'description-caption': 'Описание',
   'subscriptions-caption': 'Подписки',
-  'sendingPermissions-caption': 'Разрешения на отправку'
+  'sendingPermissions-caption': 'Разрешения на отправку',
+  'connectionsLimit-caption': 'Лимит подключений',
+  'sequentialSent-caption': 'Последовательная отправка'
 };

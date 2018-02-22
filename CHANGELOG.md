@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+* Properties `ConnectionsLimit` and `SequentialSent` for `Client` model.
+
 ## [0.1.0-beta.3] - 2018-02-16
 
 ### Changed

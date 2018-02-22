@@ -63,6 +63,12 @@ export default {
       description: {
         __caption__: 'Description'
       },
+      connectionsLimit: {
+        __caption__: 'Connections limit'
+      },
+      sequentialSent: {
+        __caption__: 'Sequential sent'
+      },
       subscriptions: {
         __caption__: 'Subscriptions',
         isCallback: {

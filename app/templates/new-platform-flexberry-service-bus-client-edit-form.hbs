@@ -101,6 +101,27 @@
   </div>
 
   <div class="field">
+    {{flexberry-field
+      placeholder=(t 'components.flexberry-field.placeholder')
+      readonly=readonly
+      required=true
+      value=model.connectionsLimit
+      class=(if model.errors.connectionsLimit 'error' '')
+      label=(t 'forms.new-platform-flexberry-service-bus-client-edit-form.connectionsLimit-caption')
+    }}
+    {{flexberry-validationmessage error=model.errors.connectionsLimit pointing="pointing"}}
+  </div>
+
+  <div class="field">
+    <label>{{t 'forms.new-platform-flexberry-service-bus-client-edit-form.sequentialSent-caption'}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.sequentialSent
+    }}
+    {{flexberry-validationmessage error=model.errors.sequentialSent pointing="pointing"}}
+  </div>
+
+  <div class="field">
     <label>{{t 'forms.new-platform-flexberry-service-bus-client-edit-form.subscriptions-caption'}}</label>
     {{flexberry-groupedit
       componentName="subscriptionsGroupEdit"

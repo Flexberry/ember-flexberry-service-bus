@@ -8,6 +8,8 @@ export let Model = Ember.Mixin.create({
   address: DS.attr('string'),
   dnsIdentity: DS.attr('string'),
   description: DS.attr('string'),
+  connectionsLimit: DS.attr('number'),
+  sequentialSent: DS.attr('boolean'),
   createTime: DS.attr('date'),
   creator: DS.attr('string'),
   editTime: DS.attr('date'),
@@ -63,6 +65,8 @@ export let defineProjections = function (modelClass) {
     address: Projection.attr('Address'),
     dnsIdentity: Projection.attr('DNS Identity'),
     description: Projection.attr('Description'),
+    connectionsLimit: Projection.attr('Connections limit'),
+    sequentialSent: Projection.attr('Sequential sent'),
     subscriptions: Projection.hasMany('new-platform-flexberry-service-bus-subscription', 'Subscriptions', {
       isCallback: Projection.attr('Callback'),
       messageType: Projection.belongsTo('new-platform-flexberry-service-bus-message-type', 'Message type', {
